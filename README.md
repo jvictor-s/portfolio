@@ -1,2 +1,2 @@
 # portifolio
-repositorio destinado a criação de um por web
+repositorio destinado a criação de um portifolio web
