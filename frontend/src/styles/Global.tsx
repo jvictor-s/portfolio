@@ -8,7 +8,7 @@ const Global = createGlobalStyle`
     }
 
     body{
-        font-family: 'Poppins', Sans-Serif;
+        font-family: "JetBrains Mono", monospace;
         background-color:${({theme}) => theme.background};
         color:${({theme}) => theme.text};
     }
