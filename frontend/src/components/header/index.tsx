@@ -1,18 +1,31 @@
 import * as C from "./styles"
-import ImgLogo from "../../assets/logo-placeholder-image.png"
+import ButtonTheme from "../button";
+import ImgLogo from "../../assets/logo.svg";
 
-function Header (){
+interface HeaderProps{
+    toogleTheme: () => void;
+    darkMode:boolean;
+} 
+
+function Header ({toogleTheme, darkMode}:HeaderProps){
        return(
         <C.Container>
             <C.Header>
-                <C.Logo src={ImgLogo} alt="imagem de teste" />
-                <C.Menu>
-                    <C.ListUnOrder>
-                        <C.List>home</C.List>
-                        <C.List>sobre</C.List>
-                        <C.List>contato</C.List>
-                    </C.ListUnOrder>
-                </C.Menu>
+                <C.Div>
+                    <C.Logo src={ImgLogo} alt="imagem de teste" />
+                    <C.Title>jvictors</C.Title>
+                </C.Div>
+                
+                <C.Div>
+                    <C.Menu>
+                        <C.ListUnOrder>
+                            <C.List>home</C.List>
+                            <C.List>sobre</C.List>
+                            <C.List>contato</C.List>
+                        </C.ListUnOrder>
+                    </C.Menu>
+                    <ButtonTheme onClick={toogleTheme} darkMode={darkMode}/>
+                </C.Div>  
             </C.Header>
         </C.Container>
     )

@@ -1,9 +1,14 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-    background-color:${({theme}) => theme.bgButton};
-    color:${({theme}) => theme.colorButton};
-    font-size:10px;
-    border-radius:10px;
-    padding:10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right:40px;
+    color: ${({ theme }) => theme.text};
+    transition: 0.3s;
+
+     &:hover {
+    transform: scale(1.2);
+    }
 `;

@@ -11,8 +11,18 @@ export const Header = styled.header`
     justify-content:space-between;
 `;
 
+export const Title = styled.h1`
+ margin-left:10px;
+ font-size: 30px;
+
+ @media (max-width: 720px) {
+    display:none;
+ }
+`
+
 export const Logo = styled.img`
-    width:80px;
+    width:30px;
+    margin-left:40px;
 `;
 
 export const Menu = styled.nav`
@@ -24,5 +34,9 @@ export const ListUnOrder = styled.ul`
 `;
 
 export const List = styled.li`
+    font-size:15px;
     margin-right:20px;
 `
+export const Div = styled.div`
+    display:flex;
+`;
