@@ -1,44 +1,41 @@
-# 🌐 Portfólio Web
+<h1 align='center'> Portifólio Web 🌐</h1> 
 
-Este repositório contém o código-fonte do meu **portfólio web pessoal**, desenvolvido para apresentar meus projetos, habilidades e experiências como desenvolvedor.
+<p align='center'>Este repositório contém o código-fonte do meu <strong>portfólio web pessoal</strong>, desenvolvido para apresentar meus projetos, habilidades e experiências como desenvolvedor.</p>
 
-## 🚀 Demonstração
+<div align='center'>
+<h2> Tecnologias Utilizadas 🛠️</h2>
 
-🔗 **Acesse o portfólio online:**
+<img width="75px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+<img width="75px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+</div>
 
-em breve
+<div align='center'>
+  <h2> Funcionalidades 📶</h2>
+</div>
 
-## 🖼️ Preview
+<div align='center'>
+  <h2> Como Executar Localmente 🧑‍💻</h2>
+</div>
 
-em breve
+<div align='center'>
+  <h2>  Próximas Melhorias 📌 </h2>
+  [ ] Adicionar Animações
+</div>
 
-## Link do projeto no Figma
-![Figma](https://www.figma.com/design/vsGoqomhXroidpyAt8EEa0/Portifolio?node-id=0-1&t=79TJY8wErLmmIGta-1)
+<h2 align='center'>Links uteis</h2>
+<ul>
+  <li><a href="#">Demonstração do projeto</a></li>
+  <li><a href="#">Preview</a></li>
+  <li><a href="https://www.figma.com/design/vsGoqomhXroidpyAt8EEa0/Portifolio?node-id=0-1&t=79TJY8wErLmmIGta-1">Projeto no Figma</a></li>
+</ul>
 
-## 🛠️ Tecnologias Utilizadas
-
-* HTML5
-* CSS3
-* JavaScript
-
-
-## 📂 Estrutura do Projeto
-
-
-## ✨ Funcionalidades
-
-
-## 🧑‍💻 Como Executar Localmente
-
+<div align='center'>
+  <h2>  Contato 📫 </h2>
+  ⭐ Se você gostou do projeto, não esqueça de deixar uma estrela no repositório!
+</div>
 
 
-## 📌 Próximas Melhorias
 
-* [ ] Adicionar animações
-
-## 📫 Contato
-
-⭐ Se você gostou do projeto, não esqueça de deixar uma estrela no repositório!
 
 
 
