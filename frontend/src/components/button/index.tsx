@@ -10,7 +10,7 @@ type Props = {
 function ButtonTheme ({onClick , darkMode}:Props){
     return(
         <C.Button onClick={onClick}>
-            {darkMode ? <FaSun size={20}/> : <FaMoon size={20}/>}
+            {darkMode ? <FaSun size={15}/> : <FaMoon size={15}/>}
         </C.Button>
     )
 }

@@ -8,6 +8,7 @@ import Header from "./components/header";
 
 //config
 import { light, dark } from "./styles/themes";
+import Footer from "./components/footer";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
   return (
     <ThemeProvider theme={darkMode ? dark : light}>
       <Header toogleTheme={toogleTheme} darkMode={darkMode}/>
+      <Footer/>
       <Global/>
     </ThemeProvider>
   )
