@@ -9,7 +9,7 @@ export const Header = styled.header`
     display:flex;
     height:100%;
     align-items:center;
-    justify-content:space-between;
+    justify-content:space-around;
 `;
 
 export const Title = styled.h1`
@@ -23,7 +23,6 @@ export const Title = styled.h1`
 
 export const Logo = styled.img`
     width:30px;
-    margin-left:40px;
 `;
 
 export const Menu = styled.nav`
