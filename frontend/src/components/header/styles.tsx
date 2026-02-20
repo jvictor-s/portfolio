@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div` 
-    height:100px;
+    height:70px;
+    //border-bottom: 0.5px solid ${({theme}) => theme.text};
 `;
 
 export const Header = styled.header`
@@ -13,7 +14,7 @@ export const Header = styled.header`
 
 export const Title = styled.h1`
  margin-left:10px;
- font-size: 30px;
+ font-size: 20px;
 
  @media (max-width: 720px) {
     display:none;
@@ -40,3 +41,12 @@ export const List = styled.li`
 export const Div = styled.div`
     display:flex;
 `;
+
+export const LineDiv = styled.hr`
+    border:none;
+    height:1px;
+    background-color:${({theme}) => theme.text} ;
+    width:100%;
+    opacity:0.3;
+    margin:0 auto;
+`

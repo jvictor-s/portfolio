@@ -13,7 +13,7 @@ function Header ({toogleTheme, darkMode}:HeaderProps){
             <C.Header>
                 <C.Div>
                     <C.Logo src={ImgLogo} alt="imagem de teste" />
-                    <C.Title>jvictors</C.Title>
+                    <C.Title>jvictors lab's</C.Title>
                 </C.Div>
                 
                 <C.Div>
@@ -27,6 +27,7 @@ function Header ({toogleTheme, darkMode}:HeaderProps){
                     <ButtonTheme onClick={toogleTheme} darkMode={darkMode}/>
                 </C.Div>  
             </C.Header>
+            <C.LineDiv></C.LineDiv>
         </C.Container>
     )
 }
