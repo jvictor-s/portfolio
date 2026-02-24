@@ -21,22 +21,14 @@ export const Title = styled.h1`
  }
 `
 
+export const Paragraph = styled.p`
+    margin-right:10px;
+`
+
 export const Logo = styled.img`
     width:30px;
 `;
 
-export const Menu = styled.nav`
-
-`
-export const ListUnOrder = styled.ul`
-    display:flex;
-    list-style:none;
-`;
-
-export const List = styled.li`
-    font-size:15px;
-    margin-right:20px;
-`
 export const Div = styled.div`
     display:flex;
     align-items:center;
