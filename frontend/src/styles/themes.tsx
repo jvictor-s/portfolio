@@ -1,9 +1,9 @@
 export const light = {
-    background: "#d3d3d3",
-    text:"#242424"
+    background: "#F5F5F5",
+    text:"#1E1E1E"
 };
 
 export const dark = {
-    background: "#242424",
-    text:"#d3d3d3"
+    background: "#1E1E20",
+    text:"#DADADB"
 };

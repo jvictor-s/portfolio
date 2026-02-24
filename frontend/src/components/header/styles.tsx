@@ -9,36 +9,31 @@ export const Header = styled.header`
     display:flex;
     height:100%;
     align-items:center;
-    justify-content:space-around;
+    justify-content:space-between;
 `;
 
 export const Title = styled.h1`
  margin-left:10px;
- font-size: 20px;
+ font-size:25px;
 
  @media (max-width: 720px) {
     display:none;
  }
 `
 
+export const Paragraph = styled.p`
+    margin-right:10px;
+`
+
 export const Logo = styled.img`
     width:30px;
 `;
 
-export const Menu = styled.nav`
-
-`
-export const ListUnOrder = styled.ul`
-    display:flex;
-    list-style:none;
-`;
-
-export const List = styled.li`
-    font-size:15px;
-    margin-right:20px;
-`
 export const Div = styled.div`
     display:flex;
+    align-items:center;
+    justify-content:center;
+    margin: 0px 20px 0 20px
 `;
 
 export const LineDiv = styled.hr`
