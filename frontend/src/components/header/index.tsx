@@ -12,8 +12,8 @@ function Header ({toogleTheme, darkMode}:HeaderProps){
         <C.Container>
             <C.Header>
                 <C.Div>
-                    <C.Logo src={ImgLogo} alt="imagem de teste" />
-                    <C.Title>jvictors lab's</C.Title>
+                    <C.Logo src={ImgLogo} alt="jvictors labs"></C.Logo>
+                    <C.Title>jvictor's lab</C.Title>
                 </C.Div>
                 
                 <C.Div>
