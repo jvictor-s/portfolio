@@ -1,10 +1,10 @@
 import styled,{css} from "styled-components";
 
-interface ContainerProps {
-  isVisible: boolean;
-}
+type ContainerProps = {
+  $isVisible: boolean;
+};
 
-export const Container = styled.div<ContainerProps>`
+export const Container = styled.div <ContainerProps>`
     position:absolute;
     height:100%;
     width:100%;
@@ -27,15 +27,16 @@ export const Container = styled.div<ContainerProps>`
         top:1rem;
         right:1rem;
         transform:rotate(45deg);
-        transform:.7s;
+        transition:1s;
     }
 
-    ${({isVisible}) => isVisible && css`
+    ${({$isVisible}) => $isVisible && css`
         opacity:1;
         pointer-events:auto;
 
         >svg{
             transform:rotate(0deg);
+            transition:1s;
         }
     `}
 

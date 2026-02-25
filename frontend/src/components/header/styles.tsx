@@ -33,8 +33,8 @@ export const Div = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
-    margin: 0px 20px 0 20px
-`;
+    margin: 0px 20px 0 20px;
+   `;
 
 export const LineDiv = styled.hr`
     border:none;
@@ -43,4 +43,10 @@ export const LineDiv = styled.hr`
     width:100%;
     opacity:0.3;
     margin:0 auto;
+`
+
+export const IconMenu = styled.div`
+    @media (min-width: 720px){
+        display:none;
+    }
 `
