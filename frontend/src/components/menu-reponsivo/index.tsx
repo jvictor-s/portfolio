@@ -1,5 +1,6 @@
 import * as C from "./styles"
 import { IoClose } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 type Props = {
   menuIsVisible: boolean;
@@ -12,9 +13,9 @@ function MenuResponsive({menuIsVisible,setMenuIsVisible}:Props){
         <IoClose size={25} onClick={() => setMenuIsVisible(false)}/>
         <C.Menu>
             <C.ListUnOrder>
-                <C.List><a href="#">home</a></C.List>
-                <C.List><a href="#">sobre</a></C.List>
-                <C.List><a href="#">contato</a></C.List>
+                <C.List><Link to="/">home</Link></C.List>
+                <C.List><Link to="/about">sobre</Link></C.List>
+                <C.List><Link to="/">home</Link></C.List>
             </C.ListUnOrder>
         </C.Menu>
     </C.Container>
