@@ -4,6 +4,7 @@ import ImgLogo from "../../assets/logo.svg";
 import { useState } from "react";
 import MenuResponsive from "../menu-reponsivo";
 import {RiMenu3Fill} from "react-icons/ri"
+import { Link } from "react-router-dom";
 
 interface HeaderProps{
     toogleTheme: () => void;
@@ -24,9 +25,9 @@ function Header ({toogleTheme, darkMode}:HeaderProps){
                 <C.Div>
                     <C.Menu>
                         <C.ListUnOrder>
-                            <C.List><a href="#">home</a></C.List>
-                            <C.List><a href="#">sobre</a></C.List>
-                            <C.List><a href="#">contato</a></C.List>
+                            <C.List><Link to="/">home</Link></C.List>
+                            <C.List><Link to="/about">sobre</Link></C.List>
+                            <C.List><Link to="/">contato</Link></C.List>
                         </C.ListUnOrder>
                     </C.Menu>
                     <C.IconMenu><RiMenu3Fill size={20} onClick={() => setMenuIsVisible(true)}/></C.IconMenu>
