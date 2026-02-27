@@ -22,8 +22,14 @@ function Header ({toogleTheme, darkMode}:HeaderProps){
                 </C.Div>
                 
                 <C.Div>
-                    <C.Paragraph>Menu</C.Paragraph>
-                    <RiMenu3Fill size={20} onClick={() => setMenuIsVisible(true)}/>
+                    <C.Menu>
+                        <C.ListUnOrder>
+                            <C.List><a href="#">home</a></C.List>
+                            <C.List><a href="#">sobre</a></C.List>
+                            <C.List><a href="#">contato</a></C.List>
+                        </C.ListUnOrder>
+                    </C.Menu>
+                    <C.IconMenu><RiMenu3Fill size={20} onClick={() => setMenuIsVisible(true)}/></C.IconMenu>
                     <MenuResponsive menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible}/>
                 </C.Div>  
             </C.Header>

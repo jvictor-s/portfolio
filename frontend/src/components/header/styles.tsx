@@ -33,8 +33,8 @@ export const Div = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
-    margin: 0px 20px 0 20px
-`;
+    margin: 0px 20px 0 20px;
+   `;
 
 export const LineDiv = styled.hr`
     border:none;
@@ -43,4 +43,35 @@ export const LineDiv = styled.hr`
     width:100%;
     opacity:0.3;
     margin:0 auto;
+`
+
+export const IconMenu = styled.div`
+    @media (min-width: 720px){
+        display:none;
+    }
+`
+
+export const Menu = styled.nav`
+
+`
+export const ListUnOrder = styled.ul`
+    display:flex;
+    list-style:none;
+    align-items:center;
+    justify-content:center;
+    gap:1rem;
+
+    @media (max-width: 720px) {
+        display:none;
+    }
+`;
+
+export const List = styled.li`
+    font-size:15px;
+    margin-right:20px;
+    
+    a{
+        text-decoration:none;
+        color:${({theme}) => theme.text};
+    }
 `

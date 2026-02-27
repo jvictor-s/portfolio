@@ -8,7 +8,7 @@ type Props = {
 
 function MenuResponsive({menuIsVisible,setMenuIsVisible}:Props){
   return(
-    <C.Container isVisible={menuIsVisible}>
+    <C.Container $isVisible={menuIsVisible}>
         <IoClose size={25} onClick={() => setMenuIsVisible(false)}/>
         <C.Menu>
             <C.ListUnOrder>

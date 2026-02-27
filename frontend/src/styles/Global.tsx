@@ -7,10 +7,11 @@ const Global = createGlobalStyle`
         box-sizing:border-box;
     }
 
-    body{
+    html, body{
         font-family: "JetBrains Mono", monospace;
         background-color:${({theme}) => theme.background};
         color:${({theme}) => theme.text};
+        height:100%;
     }
 `;
 
