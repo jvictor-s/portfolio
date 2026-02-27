@@ -50,3 +50,28 @@ export const IconMenu = styled.div`
         display:none;
     }
 `
+
+export const Menu = styled.nav`
+
+`
+export const ListUnOrder = styled.ul`
+    display:flex;
+    list-style:none;
+    align-items:center;
+    justify-content:center;
+    gap:1rem;
+
+    @media (max-width: 720px) {
+        display:none;
+    }
+`;
+
+export const List = styled.li`
+    font-size:15px;
+    margin-right:20px;
+    
+    a{
+        text-decoration:none;
+        color:${({theme}) => theme.text};
+    }
+`
