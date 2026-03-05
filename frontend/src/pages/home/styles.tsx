@@ -10,7 +10,10 @@ export const Header = styled.header``;
 export const Footer = styled.footer``;
 
 export const Main = styled.main`
+    display:flex;
     flex:1;
+    justify-content:space-around;
+    align-items:center;
 `;
 
 export const Title = styled.h1``;
