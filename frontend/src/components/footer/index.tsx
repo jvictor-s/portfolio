@@ -4,6 +4,7 @@ import {FaGithub, FaInstagram, FaLinkedin} from "react-icons/fa"
 function Footer(){
     return(
         <C.Container>
+            <C.LineDiv/>
             <C.Footer>
                 <C.IconDiv> 
                     <a href="#">{<FaGithub size={20}/>}</a>

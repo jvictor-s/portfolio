@@ -5,7 +5,7 @@ export const Container = styled.div`
     //border-bottom: 0.5px solid ${({theme}) => theme.text};
 `;
 
-export const Header = styled.header`
+export const Header = styled.div`
     display:flex;
     height:100%;
     align-items:center;
