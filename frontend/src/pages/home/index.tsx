@@ -1,12 +1,13 @@
 //functions 
 import { useState } from "react";
 import { ThemeProvider } from "styled-components";
-import { TbBrandTypescript, TbBrandReact, TbDatabase , TbBrandDocker } from "react-icons/tb";
+import { BiLogoTypescript, BiLogoReact, BiLogoDocker, BiLogoMongodb, BiLogoNodejs  } from "react-icons/bi"
 
 //Components
 import Global from "../../styles/Global";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
+import ParagrafTyped from "../../components/animation/typewrite";
 
 //config
 import { light, dark } from "../../styles/themes";
@@ -31,16 +32,23 @@ const [darkMode, setDarkMode] = useState(true);
 
 
       <C.Main>
-        <C.Div>
-          <C.Title>Olá, seja bem-vind[oa]👋</C.Title>
-          <C.Paragraph>Esse é o meu portifolio e laboratorio</C.Paragraph>
-        </C.Div>
-        <C.Div>
-          <TbBrandTypescript size={50}/>
-          <TbBrandReact size={50}/>
-          <TbDatabase size={50}/>
-          <TbBrandDocker size={50}/>
-        </C.Div>
+        <C.Section>
+            <C.Title>Bem-vindo ao meu espaço na web. 👋</C.Title>
+            <C.Subtitle>"Este site é mais do que um simples portfólio!
+              É um reflexo da minha jornada, das minhas ideias e da minha evolução como desenvolvedor.
+              Além dos meus projetos, você encontrará um blog com aprendizados e experiências, além de um laboratório onde
+              experimento novas tecnologias e ideias em constante evolução."</C.Subtitle>
+          <ParagrafTyped/>
+        </C.Section>
+        <C.Section>
+          <C.DivIcons>
+            <BiLogoTypescript size={80}/>
+            <BiLogoReact size={80}/>
+            <BiLogoNodejs size={80}/>
+            <BiLogoDocker size={80}/>
+            <BiLogoMongodb size={80}/>
+          </C.DivIcons>
+        </C.Section>
       </C.Main>
 
       <C.Footer>

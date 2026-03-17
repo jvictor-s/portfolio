@@ -5,7 +5,7 @@ export const Container = styled.div`
     //border-bottom: 0.5px solid ${({theme}) => theme.text};
 `;
 
-export const Header = styled.header`
+export const Header = styled.div`
     display:flex;
     height:100%;
     align-items:center;
@@ -45,33 +45,21 @@ export const LineDiv = styled.hr`
     margin:0 auto;
 `
 
-export const IconMenu = styled.div`
-    @media (min-width: 720px){
-        display:none;
-    }
-`
+export const IconMenu = styled.div``
 
-export const Menu = styled.nav`
-
-`
-export const ListUnOrder = styled.ul`
-    display:flex;
-    list-style:none;
-    align-items:center;
-    justify-content:center;
-    gap:1rem;
-
-    @media (max-width: 720px) {
-        display:none;
-    }
-`;
-
-export const List = styled.li`
-    font-size:15px;
-    margin-right:20px;
-    
-    a{
-        text-decoration:none;
-        color:${({theme}) => theme.text};
-    }
+export const Button = styled.button`
+  display: flex;
+  background: none;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: ${({ theme }) => theme.text};
+  
+  span{
+    font-family: JetBrains Mono;
+    font-size: 1rem;
+  }
+  
 `
