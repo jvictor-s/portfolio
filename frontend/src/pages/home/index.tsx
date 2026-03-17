@@ -33,7 +33,11 @@ const [darkMode, setDarkMode] = useState(true);
 
       <C.Main>
         <C.Section>
-          <C.Title>Olá, seja muito bem vind[oa] 👋</C.Title>
+            <C.Title>Bem-vindo ao meu espaço na web. 👋</C.Title>
+            <C.Subtitle>"Este site é mais do que um simples portfólio!
+              É um reflexo da minha jornada, das minhas ideias e da minha evolução como desenvolvedor.
+              Além dos meus projetos, você encontrará um blog com aprendizados e experiências, além de um laboratório onde
+              experimento novas tecnologias e ideias em constante evolução."</C.Subtitle>
           <ParagrafTyped/>
         </C.Section>
         <C.Section>

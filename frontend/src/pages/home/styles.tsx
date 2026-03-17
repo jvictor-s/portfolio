@@ -21,16 +21,36 @@ export const Main = styled.main`
 `;
 
 export const Title = styled.h1`
-    font-size:2.5rem;
+    font-size:2.0rem;
+`;
+
+export const Subtitle = styled.h2`
+    font-size:1rem;
 `;
 
 export const Section = styled.section`
     display:flex;
     flex-direction:column;
+    justify-content: center;
     align-items:center;
     text-align:center;
+    gap:10px;
     width:50%;
-    margin:0px 20px 0 20px;
+    height: 100%;
+    padding: 2rem;
+    
+    @media (max-width: 750px) {
+        width: 100%;
+    }
+    
+    span{
+      height: 45px;
+    }
 `;
 
-export const DivIcons = styled.div``;
+export const DivIcons = styled.div`
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+`;
