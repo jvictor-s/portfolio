@@ -41,7 +41,7 @@ function About() {
               Atualmente, estou me aperfeiçoando na área de desenvolvimento fullstack,
               buscando constantemente evoluir minhas habilidades e acompanhar as tendências do mercado,
               tendo grande interesse em criar soluções completas, desde o front-end até o back-end.
-              Além da tecnologia, sou fã de Jogos e Filmes principlamente da categoria de Ficção Científica.
+              Além da tecnologia, sou fã de Jogos e Filmes principalmente da categoria de Ficção Científica.
             </C.Paragraph>
           </C.Section>
         </C.Main>

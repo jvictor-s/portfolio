@@ -1,20 +1,15 @@
 import styled from "styled-components";
 
-export const Container = styled.div` 
-    height:70px;
-    //border-bottom: 0.5px solid ${({theme}) => theme.text};
-`;
-
-export const Header = styled.div`
+export const Header = styled.header`
     display:flex;
-    height:100%;
+    height:5rem;
     align-items:center;
     justify-content:space-between;
 `;
 
 export const Title = styled.h1`
  margin-left:10px;
- font-size:25px;
+ font-size:1.5rem;
 
  @media (max-width: 720px) {
     display:none;

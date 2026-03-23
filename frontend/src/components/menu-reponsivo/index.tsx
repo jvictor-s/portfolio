@@ -19,11 +19,8 @@ function MenuResponsive({menuIsVisible,setMenuIsVisible}:Props){
                 <C.List><Link to="/">home</Link></C.List>
                 <C.List><Link to="/about">sobre</Link></C.List>
                 <C.List><Link to="/projetos">projetos</Link></C.List>
-                <C.List><Link to="/blog">blog</Link></C.List>
-                <C.List><Link to="/lab">lab</Link></C.List>
             </C.ListUnOrder>
       </C.Menu>
-      <C.Overlay/>
     </C.Container>
   )
 }
