@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 type ContainerProps = {
   $isVisible: boolean;
@@ -6,6 +6,8 @@ type ContainerProps = {
 
 export const Container = styled.div<ContainerProps>`
   display: flex;
+  border-left: 1px solid ${({ theme }) => theme.text};
+  border-radius:20px;
   flex-direction: column;
   position: fixed;
   height: 100vh;
@@ -13,23 +15,12 @@ export const Container = styled.div<ContainerProps>`
   z-index: 9999;
   top: 0;
   right: 0;
-  transition: 0.5s;
-
+  transform: translateX(${({ $isVisible }) => ($isVisible ? "0" : "100%")});
+  transition: transform 0.5s;
   background: ${({ theme }) => theme.background};
-
-  opacity: 0;
-  pointer-events: none;
-
   @media (max-width: 750px) {
     width: 70vw;
   }
-
-  ${({ $isVisible }) =>
-    $isVisible &&
-    css`
-      opacity: 1;
-      pointer-events: auto;
-    `}
 `;
 
 export const Menu = styled.nav`
@@ -39,12 +30,11 @@ export const ListUnOrder = styled.ul`
   display: flex;
   list-style: none;
   flex-direction: column;
-  gap: 1rem;
 `;
 
 export const List = styled.li`
-  font-size: 15px;
-  padding: 10px 5%;
+  font-size: 1rem;
+  padding: 1rem 5%;
 
   a {
     text-decoration: none;
@@ -53,7 +43,7 @@ export const List = styled.li`
   }
 
   a:hover {
-    font-size: 20px;
+    font-size: 1.5rem;
   }
 `;
 
@@ -70,19 +60,5 @@ export const Button = styled.button`
   span {
     font-family: JetBrains Mono;
     font-size: 1rem;
-  }
-`;
-
-export const Overlay = styled.div`
-  position: fixed;
-  z-index: 8888;
-  top: 0;
-  left: 0;
-  width: 60vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-
-  @media (max-width: 750px) {
-    width: 30vw;
   }
 `;

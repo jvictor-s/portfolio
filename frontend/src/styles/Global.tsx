@@ -1,4 +1,4 @@
-import {createGlobalStyle} from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 const Global = createGlobalStyle`
     *{
@@ -7,11 +7,11 @@ const Global = createGlobalStyle`
         box-sizing:border-box;
     }
 
-    html, body{
+    html,body{
         font-family: "JetBrains Mono", monospace;
-        background-color:${({theme}) => theme.background};
-        color:${({theme}) => theme.text};
-        height:100%;
+        background-color:${({ theme }) => theme.background};
+        color:${({ theme }) => theme.text};
+        height: 100%;
     }
 `;
 

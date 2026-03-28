@@ -1,24 +1,23 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-    background-color:${({theme}) => theme.background};
+    background-color:${({theme}) => theme.backgroundFooter};
 `;
-export const Footer = styled.div`
+export const Footer = styled.footer`
     display:flex;
     justify-content:space-around;
     align-items:center;
-    height:50px;
+    height:5rem;
     width:100%;
-    margin-top:10px;
-    margin-bottom:10px;
-
+    padding: 10px;
+    
     @media (max-width: 750px) {
         flex-direction: column;
     }
     `;
 export const Div = styled.div`
     color:${({theme}) => theme.text};
-    font-size:12px;
+    font-size:.8rem;
     
     a{
         text-decoration:none;

@@ -23,35 +23,32 @@ function About() {
   };
 
   return (
-    <C.Container>
-      <ThemeProvider theme={darkMode ? dark : light}>
-        <C.Header>
-          <Header toogleTheme={toogleTheme} darkMode={darkMode} />
-        </C.Header>
+  <C.AboutContainer>
+    <ThemeProvider theme={darkMode ? dark : light}>
 
-        <C.Main>
+      <Header toogleTheme={toogleTheme} darkMode={darkMode} />
+    
+      <C.Main>
           <C.Section>
             <C.Image src={ImgAbout} alt="Minha foto" />
           </C.Section>
           <C.Section>
-            
             <C.Title>Fala galera, me chamo João Victor Batista,</C.Title>
             <C.Paragraph>
               sou estudante do 5º período do IFPB – Campus Cajazeiras.
               Atualmente, estou me aperfeiçoando na área de desenvolvimento fullstack,
               buscando constantemente evoluir minhas habilidades e acompanhar as tendências do mercado,
               tendo grande interesse em criar soluções completas, desde o front-end até o back-end.
-              Além da tecnologia, sou fã de Jogos e Filmes principlamente da categoria de Ficção Científica.
+              Além da tecnologia, sou fã de Jogos e Filmes principalmente da categoria de Ficção Científica.
             </C.Paragraph>
           </C.Section>
-        </C.Main>
+      </C.Main>
 
-        <C.Footer>
-          <Footer />
-        </C.Footer>
-        <Global />
-      </ThemeProvider>
-    </C.Container>
+      <Footer />
+        
+      <Global/>
+    </ThemeProvider>
+  </C.AboutContainer>
   );
 }
 

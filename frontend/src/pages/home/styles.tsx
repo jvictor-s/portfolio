@@ -1,13 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const HomeContainer = styled.div`
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 `;
-
-export const Header = styled.header``;
-export const Footer = styled.footer``;
 
 export const Main = styled.main`
     display:flex;
@@ -21,12 +18,17 @@ export const Main = styled.main`
 `;
 
 export const Title = styled.h1`
-    font-size:2.0rem;
+    font-size:2rem;
 `;
 
 export const Subtitle = styled.h2`
-    font-size:1rem;
+    font-size:1.3rem;
 `;
+
+export const Paragraph =styled.p`
+    font-weight:normal;
+    text-align:justify;
+`
 
 export const Section = styled.section`
     display:flex;
@@ -36,7 +38,6 @@ export const Section = styled.section`
     text-align:center;
     gap:10px;
     width:50%;
-    height: 100%;
     padding: 2rem;
     
     @media (max-width: 750px) {

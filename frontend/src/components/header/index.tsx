@@ -1,6 +1,5 @@
 import * as C from "./styles";
 import ButtonTheme from "../button";
-import ImgLogo from "../../../public/logo.svg";
 import { useState } from "react";
 import MenuResponsive from "../menu-reponsivo";
 import { RiMenuUnfold2Line } from "react-icons/ri";
@@ -13,11 +12,11 @@ interface HeaderProps {
 function Header({ toogleTheme, darkMode }: HeaderProps) {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
   return (
-    <C.Container>
+    <>
       <C.Header>
         <C.Div>
-          <C.Logo src={ImgLogo} alt="jvictors labs"></C.Logo>
-          <C.Title>jvictor's lab</C.Title>
+          <C.Logo src="/logo.svg" alt="jvictors labs"></C.Logo>
+          <C.Title>jvictor's</C.Title>
           <ButtonTheme onClick={toogleTheme} darkMode={darkMode} />
         </C.Div>
 
@@ -33,10 +32,10 @@ function Header({ toogleTheme, darkMode }: HeaderProps) {
             menuIsVisible={menuIsVisible}
             setMenuIsVisible={setMenuIsVisible}
           />
-        </C.Div>
-      </C.Header>
-      <C.LineDiv />
-    </C.Container>
+      </C.Div>
+    </C.Header>
+      <C.LineDiv></C.LineDiv>
+  </>
   );
 }
 
