@@ -18,7 +18,7 @@ function MenuResponsive({menuIsVisible,setMenuIsVisible}:Props){
             <C.ListUnOrder>
                 <C.List><Link to="/">home</Link></C.List>
                 <C.List><Link to="/about">sobre</Link></C.List>
-                <C.List><Link to="/projetos">projetos</Link></C.List>
+                <C.List><Link to="/projects">projetos</Link></C.List>
             </C.ListUnOrder>
       </C.Menu>
     </C.Container>

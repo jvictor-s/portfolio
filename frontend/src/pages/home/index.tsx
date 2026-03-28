@@ -13,7 +13,6 @@ import { light, dark } from "../../styles/themes";
 
 import * as C from "./styles";
 
-
 function Home(){
 
 const [darkMode, setDarkMode] = useState(true);
@@ -24,18 +23,17 @@ const [darkMode, setDarkMode] = useState(true);
 
   return (
   <C.HomeContainer>
-  <ThemeProvider theme={darkMode ? dark : light}>
-    <C.Header>
-       <Header toogleTheme={toogleTheme} darkMode={darkMode}/>
-        </C.Header>
+    <ThemeProvider theme={darkMode ? dark : light}> 
+
+      <Header toogleTheme={toogleTheme} darkMode={darkMode}/>
     
-    <C.Main>
+      <C.Main>
         <C.Section>
-            <C.Title>Bem-vindo ao meu espaço na web. 👋</C.Title>
-            <C.Subtitle>"Este site é mais do que um simples portfólio!
-              É um reflexo da minha jornada, das minhas ideias e da minha evolução como desenvolvedor.
+          <C.Title>Bem-vindo ao meu espaço na web. 👋</C.Title>
+          <C.Subtitle>Este site é mais do que um simples portfólio!</C.Subtitle>
+          <C.Paragraph>"É um reflexo da minha jornada, das minhas ideias e da minha evolução como desenvolvedor.
               Além dos meus projetos, você encontrará um blog com aprendizados e experiências, além de um laboratório onde
-              experimento novas tecnologias e ideias em constante evolução."</C.Subtitle>
+              experimento novas tecnologias e ideias em constante evolução."</C.Paragraph>
         </C.Section>
         <C.Section>
           <C.DivIcons>
@@ -48,11 +46,10 @@ const [darkMode, setDarkMode] = useState(true);
         </C.Section>
       </C.Main>
 
-      
-    <Footer/>
+      <Footer/>
   
-    <Global/>
-  </ThemeProvider>
+      <Global/>
+    </ThemeProvider>
   </C.HomeContainer>
 )
 
