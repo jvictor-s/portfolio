@@ -13,9 +13,10 @@ export const Image = styled.img`
 export const Main = styled.main`
   display: flex;
   flex: 1;
-  
+  margin:0 150px;
   @media (max-width: 750px) {
     flex-direction: column;
+    margin:0;
   }
 `;
 

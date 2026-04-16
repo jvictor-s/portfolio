@@ -9,11 +9,10 @@ export const HomeContainer = styled.div`
 export const Main = styled.main`
     display:flex;
     flex:1;
-    justify-content:space-around;
-    align-items:center;
-
+    margin:0 150px;
     @media (max-width: 750px) {
         flex-direction:column;
+        margin:0;
     }
 `;
 
@@ -23,6 +22,7 @@ export const Title = styled.h1`
 
 export const Subtitle = styled.h2`
     font-size:1.3rem;
+    color:#d45500;
 `;
 
 export const Paragraph =styled.p`

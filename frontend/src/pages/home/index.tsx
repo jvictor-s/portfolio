@@ -29,7 +29,7 @@ const [darkMode, setDarkMode] = useState(true);
     
       <C.Main>
         <C.Section>
-          <C.Title>Bem-vindo ao meu espaço na web. 👋</C.Title>
+          <C.Title>Bem-vindo ao meu espaço na web.</C.Title>
           <C.Subtitle>Este site é mais do que um simples portfólio!</C.Subtitle>
           <C.Paragraph>"É um reflexo da minha jornada, das minhas ideias e da minha evolução como desenvolvedor.
               Além dos meus projetos, você encontrará um blog com aprendizados e experiências, além de um laboratório onde

@@ -1,12 +1,13 @@
 export const light = {
   background: "#F5F5F5",
+  backgroundHeader:"#ffffff",
   backgroundFooter: "#ffffff",
-  text:"#1E1E1E"
+  text:"#00001f"
 };
 
 export const dark = {
-  background: "#1E1E20",
-  backgroundFooter: "#000000",
-  text:"#DADADB"
-    
+  background: "#00001f",
+  backgroundHeader: "#00002d",
+  backgroundFooter: "#00002d",
+  text:"#ffffff" 
 };
