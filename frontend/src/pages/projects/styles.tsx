@@ -11,9 +11,11 @@ export const Main = styled.main`
     flex:1;
     justify-content:space-around;
     align-items:center;
+    margin: 0 150px;
 
     @media (max-width: 750px) {
         flex-direction:column;
+        margin:0;
     }
 `
 

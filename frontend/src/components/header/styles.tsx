@@ -4,7 +4,8 @@ export const Header = styled.header`
     display:flex;
     height:5rem;
     align-items:center;
-    justify-content:space-between;
+    justify-content:space-around;
+    background-color:${({theme})=> theme.backgroundHeader}
 `;
 
 export const Title = styled.h1`
@@ -21,7 +22,7 @@ export const Paragraph = styled.p`
 `
 
 export const Logo = styled.img`
-    width:30px;
+    width:2.5rem;
 `;
 
 export const Div = styled.div`

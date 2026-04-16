@@ -8,8 +8,8 @@ export const Footer = styled.footer`
     justify-content:space-around;
     align-items:center;
     height:5rem;
-    width:100%;
-    padding: 10px;
+    width:100vw;
+    padding: 10px 60px;
     
     @media (max-width: 750px) {
         flex-direction: column;

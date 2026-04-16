@@ -15,7 +15,7 @@ function Header({ toogleTheme, darkMode }: HeaderProps) {
     <>
       <C.Header>
         <C.Div>
-          <C.Logo src="/logo.svg" alt="jvictors labs"></C.Logo>
+          <C.Logo src="/logo-jvictors-512x512.svg" alt="jvictors labs"></C.Logo>
           <C.Title>jvictor's</C.Title>
           <ButtonTheme onClick={toogleTheme} darkMode={darkMode} />
         </C.Div>
